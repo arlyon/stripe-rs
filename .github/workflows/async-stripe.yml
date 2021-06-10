@@ -49,6 +49,7 @@ jobs:
           args: >
             --no-default-features
             --features runtime-${{ matrix.runtime }}
+            -- --deny warnings
   test:
     runs-on: ubuntu-20.04
     strategy:
